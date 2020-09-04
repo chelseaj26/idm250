@@ -1,17 +1,17 @@
 <section>
     <div class="featured-container">
    
-      <p class= "project-title-divider"> ––– Featured Projects<p>
+      <p class= "project-title-divider"> ––– Other Projects<p>
           <?php
-          $featured_posts = get_field('featured_project');
-          if ($featured_posts): ?>
-              <?php foreach ($featured_posts as $featured_post):
-                  $permalink = get_permalink($featured_post->ID);
-                  $title = get_the_title($featured_post->ID);
-                  $excerpt = get_the_excerpt($featured_post->ID);
-                  $image = get_the_post_thumbnail($featured_post->ID);
+          $other_posts = get_field('other_project');
+          if ($other_posts): ?>
+              <?php foreach ($other_posts as $other_post):
+                  $permalink = get_permalink($other_post->ID);
+                  $title = get_the_title($other_post->ID);
+                  $excerpt = get_the_excerpt($other_post->ID);
+                  $image = get_the_post_thumbnail($other_post->ID);
                   ?>
-                  <div class="media-block">
+                  <div class="media-block right">
                     <div class="media-block__figure">
                       <?php echo $image; ?>
                     </div>
@@ -30,5 +30,6 @@
       <a class="btn view_all" target="<?php echo $cta['target'] ?>" href="<?php echo $cta['url'] ?>"><?php echo $cta['title']; ?></a>
     <?php endif; ?>
     </div>
+
       </div>
   </section>

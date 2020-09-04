@@ -8,9 +8,8 @@
 ?>
 
 
-
 <footer class="footer">
-<p class= "footer-text"> Copyright © Chelsea James. <br>
+<p class= "footer-text"> Copyright &#169; Chelsea James. <br>
 Icons courtsey of FlatIcon. Photography courtesy of Google.</p>
 <!-- <div class="footer-menu">
 <?php wp_nav_menu(['theme_location' => 'footer_menu'])?>
